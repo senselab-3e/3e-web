@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>3e</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+<link rel="stylesheet" href="./style.css">
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+<style media="screen">
+  button{
+    color: #e0028b;
+    font-size: 36px;
+    background-color: #0bdbca;
+    width: 50px;
+    height:50px
+  }
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <div class="green-box">
+    <img src="3eee.png" alt="" width="100px">
+  </div>
+  <div class="tile-container">
+    <div class="ball tile hero-1"><br><br><br><span class="rot">propositions (current)</span></div>
+    <div class="ball tile hero-2"><br><br><br><span class="rot">3e info/mission</span></div>
+    <div class="ball tile hero-3"><br><br><br><span class="rot">invented spazes</span></div>
+    <div class="ball tile hero-4"><br><br><br><span class="rot">radical pedagogy</span></div>
+    <div class="ball tile hero-8"><br><br><br><br><span class="rot">schizosomatics</span></div>
+    <div class="ball tile hero-6"><br><br><br><span class="rot">3e process seedbank</span></div>
+    <div class="ball tile hero-7"><br><br><br><span class="rot">techniques for relation</span></div>
+    </div>
+</main>
+
+<div class="page-container">
+  <div class=" page hero-1">
+    <button>&#10006;</button>
+  </div>
+  <div class=" page hero-2">
+    <button>&#10006;</button>
+  </div>
+  <div class=" page hero-3">
+    <button>&#10006;</button>
+    -roomz
+  	-underspz
+  	-spz
+  </div>
+  <div class=" page hero-4">
+    <button>&#10006;</button>
+    -playcare
+    -class
+    -techniques for neurodiversity
+  </div>
+  <div class=" page hero-8">
+    <button>&#10006;</button>
+  </div>
+  <div class=" page hero-6">
+    <button>&#10006;</button>
+  </div>
+  <div class=" page hero-7">
+    <button>&#10006;</button>
+  </div>
+</div>
+<!-- partial -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js'></script> -->
+  <script  src="./script.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js">  </script>
+
+  <script type="text/javascript">
+  var tl = gsap.timeline ()
+  .to('.ball',{
+    x: "random(-20, 20, 5)", //chooses a random number between -20 and 20 for each target, rounding to the closest 5!
+    y: "random(-20, 10, 3)",
+    duration:1,
+    ease:"none",
+    repeat:-1,
+    repeatRefresh:true // gets a new random x and y value on each repeat
+  })
+  </script>
+</body>
+</html>

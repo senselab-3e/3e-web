@@ -1,0 +1,86 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* background: #f1f1f1; */
+  font-size: 20pt;
+  font-family: 'Spectral', serif;
+  color: #1313a8;
+}
+
+main {
+  height: 100%;
+}
+
+.green-box {
+  height: 350px;
+  /* background: #70c26f; */
+}
+
+.tile-container {
+  position: absolute;
+  bottom: -275px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  user-select: none;
+}
+
+.tile {
+  width: 11%;
+  height: 800px;
+  margin: 4px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.page-container {
+  visibility: hidden;
+}
+
+.page {
+  cursor: pointer;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.hero-1 {
+  background: linear-gradient(#ebcf34, #ffffff);
+}
+
+.hero-2 {
+  background: linear-gradient(#972FF8, #ffffff);
+}
+
+.hero-3 {
+  background: linear-gradient(#6cf5b7, #ffffff);
+}
+
+.hero-4 {
+  background: linear-gradient(#ebcf34, #ffffff);
+}
+.hero-8{
+  background: linear-gradient(#c76f1c, #ffffff);
+}
+.hero-6 {
+  background: linear-gradient(#c76f1c, #ffffff);
+}
+
+.hero-7 {
+  background: linear-gradient(#6cf5b7, #ffffff);
+}
+.rot{
+
+  display:block;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
+}
